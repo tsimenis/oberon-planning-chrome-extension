@@ -6,9 +6,8 @@ reservations.forEach(reservation => {
 	reservation.style.backgroundColor = rgba;
 })
 
-const search = window.location.search.substring(1);
-const searchParams = search ? JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}') : {};
-const period = searchParams.period || '';
+const search = window.location.search
+const isDay = search.includes('day');
 
 document.body.classList.add('loaded');
-document.body.classList.add(period);
+if (isDay) document.body.classList.add('day');
