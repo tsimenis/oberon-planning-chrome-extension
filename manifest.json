@@ -1,0 +1,22 @@
+{
+  "name": "Planning styles",
+  "version": "0.1.0",
+  "description": "Opinionated styles for https://planning.oberon.nl",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab", "https://fonts.googleapis.com/"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://planning.oberon.nl/*"]
+  }]
+ 
+}

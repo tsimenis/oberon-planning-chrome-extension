@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+body.loaded table#overview a.reservation {
+  opacity: 1;
+}
+
+body.day table#overview td {
+  width: auto;
+}
+
+body,
+table {
+  font-family: 'Roboto Mono', monospace !important;
+}
+
+body table#overview tr.h td {
+  font-size: 0.875rem;
+  background-color: #F1F5F9;
+  padding: 0.875rem 0;
+  border-right: 1px solid rgba(15, 23, 42, 0.1) !important;
+}
+
+body table#overview tr.h td .selected {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+body table#overview tr.h td.now {
+  background-color: #e2e8f0;
+}
+
+body table#overview tr.h:first-of-type img {
+  display: none;
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:first-of-type,
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:last-of-type {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:first-of-type:before,
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:last-of-type:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO+SURBVHgB1ZpLTxRBEMf/3TPyMAY3hsTEKAwX40nQRE8mwsWrO/EDoAfPwtGTywcgwU8g3jEDR7gIgbvLSW8siEYNB7zILux0W9XLLLC77GMe+/gls/OgE6qmq7qqukYgBrwdnVLIpyHFhBRilB5N0JE6PQJygMgprbaFJb+IE3/DHRvMISICIWGhYRffQOtJgI8QaJHVFhaiKNOyAmeCqxlcfMMREYvw/blWFWlJAe/7ybv4Ba9AyIx758pc08ObGeTtHDmQlgehJ9AecvDVVDOzIRsNWNkvToOcro3CMw7/z6WdQrrRwLoKrJDJKOUvIkmTuZyUZcEzZluHS03ICK9VBt1AHb+oqcDSXiFtkemji5DSevn8tv2x8nmVAsZh2eY7Yzb1OCTHflDp2NU+YMnP6D7hmZRZCSu4oMBKyWEcdCu0En7aPcpceBRcnJrODrofMqW+MXdMHPJNeQa0RAa9QUrJ/ExwY2agh95+QHkWzAwoC5NoIwd5hW9/i4hAeRZs/pFCUnaJxGHBvb08tn4fIz0ygHvXbYRFCuspn21jPhqJ5jn/ihqrPwpY+1kw1/GgJzm1t9l8GmZ0IUlG8DOUlU/bVBVNhK/LapO04GVIdpvsfxwxOsAaCc52nqjgpwgNh7xIO4iBTXLM5d08DgoK7UJIMc7LgIMIfD0sYpneeMRlMSyp0OtYhwUPSIVegIQoreudhhU4RAg4CM0/HsLru1cx3J/UQtwYNiFWIHT+/+Rmnzk4unptdmIixwpkEUMN0BlFdM5WWu9KEV8kCxThILa6X0hUEaWxbdNvFlbMoZh4dqsfD29cwdafY2z+Ok5EEZtqdykxsIyEGB6QJut8e/+amZW4UbQpLEulmVhHgrAivFrNPxqKTxGNLO9QlAKZ9jcoLk8iYQJFXJqVqCYlLbFgzuZODfBNqHgQBlYkSjHDsPnw2ShgzEir9+gZxGKwwXUWQts8C5GgRkhwWVagV2aBNpwvdHGq90Z3C9QLSLZGjkDOHekfO/+gOgtTykV3mhJv7k5VPqxSwEyPr2bRbfh4VavlVDMPpoGL5A9NN9qSpmT3/TUzhrpJkMc7wULWbfEkDQv/YnQwc9nfG2ZxHjfaLHxA+3sG5Idq1h0ha6hD823WUuPDQTugDj6U7zbTZm2t0Z28SZlY5NYxmUpCfGpw5HAvQQg5jfgoBVHKBoLGRbNE+NiDzAq0LS9pZzt04NPr0HojjOABsZRigTLKfG7DW5WK7oVzbggJp7nuyHIJy1UgF1JhhT7Pf/esraHb7KarAAAAAElFTkSuQmCC");
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 #0EA5E9;
+          box-shadow: 0 0 0 0 #0EA5E9;
+  -webkit-transition: .25s ease-out;
+  transition: .25s ease-out;
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:first-of-type:hover:before,
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:last-of-type:hover:before {
+  -webkit-box-shadow: 0 0 10px 1px #0EA5E9;
+          box-shadow: 0 0 10px 1px #0EA5E9;
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:last-of-type:before {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO5SURBVHgB1ZpLTxNRFMf/985Iq4laExKNDxh2ugJda4SNLu3ED4B+AiF+AEtcuMW9ibhxhSksXQnRnYkWNxoXUlAXJpigMdBC517PuWV4tPQ1L9pfMp2Z25vMOXPOuY9zRiAC8ss6o1DKQooRKcQgNY3Qkdk5fIqAKCqtloQlP4ptb9EdOl5ESAQCwkLDrjyA1qMAHwHQoqAtTIdRpmMF9gRXEzj4hkMiZuB5U50q0pEC+e/bj6IXvAYhc+6lY1Ntd2+nU35504G08hB6BMlQhKfG2rGGbNVh/kdlHBR0CQrPOPzM2eVytlXHpgrMk8so5c0gTpdpTMaykDdu24SGLmSE1yqHbqBJXByqwOxqOWuR66OLkNK6d+ei/aK2vU4BE7Ds80fjNs1Yp8C+WhvY9TFgyTfoPuGZjBkJazigwHw1YBx0KzQSvlrZzB1o8i92XGcZ3Q+5Ut+QOyTW+WbXAloih94go2Rpwr8xFuiht++zawVjAWVhFCH48qeCtbJCguxaweYfKSStLhGYz+sVzK2WcP1sH9zBNPpTLVcooZHCuslnEYX75FdKRgGfxBTx+s7Y7D5RP+bdry18+L2NW+dTuHGuLzZFlFXKStoVxbLK3KhoY5Unn/7h9c8yYoFkl+T/w4iRtZLCy2+bePj+L96SZaJEaDhkW+0gAViRZ183IlVESDHMzukgQSJWJBP/eNeA/YrwMByQo1PAh0coETi5U53IeFGU+PL58mnbzBV8DkPiCvSnJdyBtJnsIqDIChSQQCCfsIV54zy5RYcu2krrFRnGCVvAgt++kDKC83WUKI0lm34LsKJXIE7BfWzau9sS6Tlg6zkiIgnBfRQlhWV1ayYWEAEcmI+vnUSWgjRu4Wn5X+AMRXUM094izcujCMiVjE2rzlOJ7AN8pCWmzdncqTTfrCMgPJYnKTzD7sNn81TjRlo9Rc8gZvwE195rC2mFRKFCiH+5q0CvWIESzgeqOPW50ZUy1QKQZC2gE4ruQGpof0N95CnlojtdiZO7Y7WNdQoY83hqEt2Gh/uHlZwOHfuo4wzFQ9uFtrip+n1q7rD/mk6Xec4EC9m0xBM3LPzdweO5Rv+3nO/zXGizwGulpDc9FIdq0h0gb2hC+2XWauHDQRJQBR/Kc9sps3ZW6I7fpcxc5DZxmVoCfGqw6XAtQQg5juioTqK0GvALF+0S4mMPcitQWl5SZjvwxKcXoPViEMF9Ilm0+8oo87kNpyoV3QtnXxcSTvO+o8BbWN4F8kYqqND7+Q/OT384ymg5nQAAAABJRU5ErkJggg==");
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:first-of-type:last-of-type {
+  width: auto;
+  height: auto;
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:first-of-type:last-of-type:before {
+  background-image: none;
+}
+
+body table#overview tr.h:first-of-type td:nth-of-type(2) a:first-of-type:last-of-type:hover:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body table#overview tr.grouphead td {
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.875rem;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  padding: 0 0 0 1rem;
+}
+
+body table#overview td {
+  text-transform: capitalize;
+  padding: 0.75rem 0 1.8rem 1rem;
+  border-right: 1px solid #919CA9 !important;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1) !important;
+  white-space: initial;
+  width: 16.66667%;
+}
+
+body table#overview td.reservationcolnohand:hover {
+  background-color: #F1F5F9;
+}
+
+body table#overview a.reservation {
+  color: #0F172A !important;
+  overflow: hidden !important;
+  padding: 0.75rem 0 2.8rem 1rem;
+  opacity: 0;
+  -webkit-transition: .25s ease-out;
+  transition: .25s ease-out;
+}
+/*# sourceMappingURL=styles.css.map */
