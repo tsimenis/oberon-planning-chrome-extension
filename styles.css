@@ -128,4 +128,38 @@ body table#overview a.reservation {
   -webkit-transition: .25s ease-out;
   transition: .25s ease-out;
 }
+
+body.dark-mode {
+  color: #E4E4E7;
+}
+
+body.dark-mode table#overview {
+  border: 1px solid #0F172A;
+}
+
+body.dark-mode table#overview a {
+  color: #E4E4E7;
+}
+
+body.dark-mode table#overview tr.h td {
+  background-color: #1E293B;
+}
+
+body.dark-mode table#overview tr.h td.now {
+  background-color: #0F172A;
+}
+
+body.dark-mode table#overview td {
+  background-color: #1E293B;
+  border-right: 1px solid #0F172A !important;
+  border-bottom: 1px solid #0F172A !important;
+}
+
+body.dark-mode table#overview td.reservationcolnohand:hover {
+  background-color: #0F172A;
+}
+
+body.dark-mode table#overview a.reservation {
+  color: #E4E4E7 !important;
+}
 /*# sourceMappingURL=styles.css.map */

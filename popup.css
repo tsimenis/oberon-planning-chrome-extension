@@ -1,0 +1,63 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  padding: 10px;
+}
+
+.toggle input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.toggle .toggle-label-text {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.toggle .slider {
+  width: 2.625rem;
+  height: 1.5rem;
+  position: relative;
+  display: inline-block;
+  background-color: #f2f2f2;
+  border-radius: 0.75rem;
+  margin-left: .5rem;
+  cursor: pointer;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.toggle .slider:before {
+  width: 1.125rem;
+  height: 1.125rem;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background-color: #333;
+  border-radius: 50%;
+  -webkit-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.toggle .checkbox:checked + .slider {
+  background-color: #ddd;
+}
+
+.toggle .checkbox:checked + .slider:before {
+  -webkit-transform: translate(1.125rem);
+          transform: translate(1.125rem);
+}
+/*# sourceMappingURL=popup.css.map */

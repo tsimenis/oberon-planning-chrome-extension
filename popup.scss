@@ -1,0 +1,55 @@
+$toggle-slider-color: #f2f2f2;
+$toggle-slider-color-active: #ddd;
+$toggle-circle-color: #333;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 10px;
+}
+
+.toggle {
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .toggle-label-text {
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  .slider {
+    width: 2.625rem;
+    height: 1.5rem;
+    position: relative;
+    display: inline-block;
+    background-color: $toggle-slider-color;
+    border-radius: 0.75rem;
+    margin-left: .5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: .3s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    &:before {
+      width: 1.125rem;
+      height: 1.125rem;
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      background-color: $toggle-circle-color;
+      border-radius: 50%;
+      transition: .3s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    }
+  }
+  .checkbox:checked + .slider {
+    background-color: $toggle-slider-color-active;
+    &:before {
+      transform: translate(1.125rem);
+    }
+  }
+}
