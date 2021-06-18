@@ -17,6 +17,10 @@ const userPrefersDarkMode = window.matchMedia && window.matchMedia('(prefers-col
 chrome.storage.sync.get('mode', ({ mode }) => {
 	if (!mode && userPrefersDarkMode) {
 		chrome.storage.sync.set({ mode: 'dark' })
+		// hacky, but oh well
+		window.setTimeout(() => {
+			document.body.classList.add('dark-mode')
+		}, 0)
 	}
 })
 

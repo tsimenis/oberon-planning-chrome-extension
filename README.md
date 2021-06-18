@@ -17,3 +17,11 @@ Chrome extension that injects css with some opinionated styles for the planning 
 Example screenshot:
 
 ![](https://raw.githubusercontent.com/tsimenis/oberon-planning-chrome-extension/master/screenshot.png)
+
+## Update 18/06/2021: Dark mode!
+
+Pin the extension in your toolbar, click on the icon to switch color mode.
+
+![](https://raw.githubusercontent.com/tsimenis/oberon-planning-chrome-extension/master/screenshot-darkmode.png)
+
+![](https://raw.githubusercontent.com/tsimenis/oberon-planning-chrome-extension/master/screenshot-darkmode1.png)
